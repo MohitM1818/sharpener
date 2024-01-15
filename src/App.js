@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Navbar from './component/navbar';
+import Firstsection from './component/First-section';
+import { Route, Routes } from 'react-router-dom';
+import SuccessS from './component/Success-Stories';
+import './App.css';
+import Hire from './component/Hire-superstar';
+import  Footer  from './component/footer';
+import  Login  from './component/login';
+import Signup from './component/signup';
+import Admin from './dashboard/admin';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Navbar/> */}
+     
+      <Routes>
+        <Route path="/" element={<><Navbar/> <Firstsection/> <Footer/></>}/>
+        <Route path="/Success-Stories" element={<><Navbar/> <SuccessS/> <Footer/></>}/>
+        <Route path='/Hire-superstar' element={<><Navbar/> <Hire/> <Footer/></>}/>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/admin' element={<Admin/>}></Route>
+      </Routes>
+      {/* <Footer/> */}
+    </>
   );
 }
 

@@ -1,0 +1,206 @@
+.admin-main{
+    width: 100vw;
+    height: 100vh; 
+    background: linear-gradient(90deg,rgba(244,11,11,.8),rgba(0,0,0,.8) 87.19%);
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+.admin-main>h2{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    height: 9%;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.admin-small{
+    width: 100%;
+    height: 91%;
+    display: flex;
+}
+.admin-left{
+    width: 20%;
+    height: 100%;
+}
+.admin-left ul{
+    list-style: none;
+    display: flex;
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.admin-list{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+}
+.list-button{
+    border: none;
+    font-size: large;
+    width: 100%;
+    background: none;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    border-radius: 0 1rem 1rem 0;
+}
+.admin-right{
+    width: 80%;
+    background-color: #fff;
+    height: 100%;
+    color: black;
+}
+/* .admin-list:hover{
+    background-color: rgba(244,11,11,.6);
+} */
+
+/* inside form css */
+.admin-right label{
+    color: black;
+}
+.admin-right form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1.5rem;
+    margin-left: 1rem;
+}
+.ar-form h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.admin-right form div{
+    display: inline-block;
+    margin-left: .8rem;
+    width: 70%;
+}
+.ar-form label{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.ar-form div input{
+    border: none;
+    padding: 5px 0 ;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    outline: none;
+}
+.ar-form label select{
+    border:1px solid rgba(0,0,0,.4);
+    height: 2rem;
+    width: 6rem;
+}
+.ar-form label select option{
+    font-weight: 400;
+}
+.ar-lastlabel{
+    display: flex;
+}
+.ar-lastdiv{
+    display: flex !important;
+    flex-direction: row;
+    gap: .5rem;
+}
+.ar-lastdiv input{
+    border-color: black !important;
+}
+.ar-form button{
+    margin: 1rem 0 0 45%;
+    width: 8rem;
+    height: 3rem;
+    border-radius: .45rem;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #b00;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+/* See all questin */
+.all-ques{
+    display: flex;
+    flex-direction: column;
+}
+.all-ques h2{
+    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.ar-question{
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.ar-answer{
+    font-weight: 450;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.ar-alternateans{
+    font-weight: 450;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.all-ques p span{
+    color: #b00;
+}
+/* create interview css */
+.create-interview{
+    display: flex;
+    flex-direction: column;
+
+}
+.create-interview button{
+    margin: 1rem 0 0 45%;
+    width: 8rem;
+    height: 3rem;
+    border-radius: .45rem;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #b00;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+.create-interview input{
+    border: none;
+    padding: 5px 0 ;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    outline: none;
+}
+.create-interview label{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.create-interview h2{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+/* interviews css */
+.interviews{
+    display: flex;
+    flex-direction: column;
+}
+.interviews h2{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.interviews p{
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+}
+.interviews p span{
+    font-weight: 500;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,186 @@
+main{
+    width: 100%;
+}
+.success-1{
+    padding: 7rem 0;
+    background-color: #fef6e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success-1 h1{
+    font-size: clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
+    text-align: center;
+    font-weight: 900;
+}
+.success-slider{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    /* width: min(90%,50rem); */
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+    border-radius: 1rem;
+    z-index: 2;
+}
+.success-head{
+    background-color: #c7ffe3;
+    margin-bottom: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    padding: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem) 0;
+    width: 100%;
+    font-size: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    font-weight: 900;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.success-slider>img{
+    border-radius: 50%;
+    box-shadow: 1px 4px 10px rgba(0,0,0,.5);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.success-name{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 400;
+}
+.success-pera{
+    text-align: center;
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 400;
+    padding: 0 .25rem;
+    margin: 0;
+}
+.success1-bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+}
+.success-small>img{
+    width:auto ;
+    height:1.5rem
+}
+.success-small{
+    display: flex;
+    gap: .5rem;
+}
+.success-small small{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 400;
+}
+ .slick-slider>button{
+    display: none !important;
+}
+.success-1 .slick-slider{
+     background-color: #fef6e0; 
+      /* background-color: transparent;  */
+    margin-top: 1.4rem;
+    width: 40rem;
+     border-radius: 1rem; 
+    /* box-shadow: 0 1px 2px 0 transparent, 0 2px 6px 2px transparent; */
+    border: none;
+}
+/* SEction 2 css */
+.success-2{
+    padding: clamp(2.07rem,calc(1.15rem + 4.63vw),4.74rem) 0;
+     display: flex; 
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center; 
+    width: 100%;
+}
+.s2-head{
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+}
+.s2-head img{
+    height: 2.5rem;
+}
+.s2-heading{
+    height: 100%;
+    margin: 0;
+    font-weight: 550;
+}
+.s2-google{
+    margin-top: 3.5rem;
+    border-radius: 2rem;
+    background: radial-gradient(92.91% 92.91% at 50% 50%,#f8ebeb .43%,hsla(0,48%,95%,0) 100%);
+    width: 90%;
+}
+.google-head{
+    display: flex;
+    justify-content: space-between;
+}
+.google-img{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google-img img{
+    width: 80%;
+    margin-bottom: 1.8rem;
+    height: 15rem;
+}
+.google-add{
+    color: #787ce1;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 2.2rem;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.s2-quora{
+    background: radial-gradient(92.91% 92.91% at 50% 50%,#f8ebeb .43%,hsla(0,48%,95%,0) 100%);
+    border-radius: 30px;
+    margin: 2.4rem 0;
+    min-height: 100vh;
+    width: 90%;
+}
+.q-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.q-mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 2.4rem;
+    width: 90%;
+}
+.mid-left{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.q-mid img{
+    max-width:100% ;
+    margin-bottom: 2.5rem;
+
+}
+.mid-right{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.q-bottom{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 2.5rem;
+    text-align: center;
+}
+.q-bottom a{
+    color: black;
+}

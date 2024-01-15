@@ -1,0 +1,211 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.hire-sec1{
+    display: flex;
+    align-items: center;
+    font-family: Rubik !important;
+    padding: 6.75rem 4.5rem 4.5rem 4.5rem;
+}
+.sec1-main{
+    display: flex;
+    align-items: center;
+   
+}
+.main-left{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+.main-right{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.left-h1{
+    width: 80%;
+    font-size: clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
+    font-weight: 900;
+    font-family: 'Rubik', sans-serif;;
+}
+.left-h2{
+    padding: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem) 0;
+    width: 80%;
+    font-weight: 900;
+    font-size: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+}
+.left-h3{
+    width: 80%;
+    font-weight: 900;
+    font-size: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+}
+.mainhire-button{
+    background-color: #b00;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    margin-top: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    padding: 0.5em 1.25em;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+.mainhire-button:hover{
+    background-color: #2e2e2e;
+}
+.main-right img{
+    margin-bottom: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    border-radius: 50%;
+    width: 22rem;
+    height: 17.2rem;
+}
+.ryan-h{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 900;
+    text-align: center;
+}
+.ryan-pera{
+    font-size: (clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem))*1.2;
+    text-align: center;
+    width: 80%;
+}
+/* section 2 css */
+.hire-sec2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(transparent,#fef6e0);
+    gap: clamp(1.44rem,calc(1.01rem + 2.13vw),2.67rem);
+    margin-top: clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
+    padding: clamp(2.07rem,calc(1.15rem + 4.63vw),4.74rem) clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+}
+.sec2-h2{
+    text-align: center;
+    font-size: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    font-weight: 900;
+    font-family: 'rubik';
+}
+.hire-sec2 img{
+    width: 80%;
+}
+/* section 3 css */
+.hire-sec3{
+    padding: clamp(2.07rem,calc(1.15rem + 4.63vw),4.74rem) clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    width: 100%;
+}
+.sec3-h2{
+    text-align: center;
+    font-weight: 900;
+    font-family: 'rubik';
+}
+.article-div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-div img{
+    width: 25%;
+}
+.article-6div{
+    grid-gap: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    display: grid;
+    gap: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    grid-template-columns: repeat(3,1fr);
+    padding: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    width: 100%;
+}
+.sec3-smalldiv{
+    padding: clamp(0.69rem,calc(0.64rem + 0.26vw),0.84rem);
+    text-align: center;
+}
+.sec3-smalldiv h3{
+    font-weight: 900;
+    font-family: 'rubik';
+    margin: 0;
+    line-height: 1.6;
+}
+.sec3-smalldiv p{
+    font-family: 'rubik';
+    margin: 0;
+    font-weight: 500;
+}
+/* section 4 css */
+.hire-sec4{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: clamp(2.07rem,calc(1.15rem + 4.63vw),4.74rem) clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    background: radial-gradient(transparent,#fef6e0);
+    width: 100%;
+}
+.sec4-div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.sec4-h2{
+    margin-bottom: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    text-align: center;
+    font-size: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    font-weight: 900;
+}
+.sec4-div form{
+    background: linear-gradient(45deg,#060606,#41424c,#060606);
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.44rem,calc(1.01rem + 2.13vw),2.67rem);
+    width: min(60rem,90%);
+}
+.form-h3{
+    margin-bottom: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    color:#fff;
+    font-family: 'rubik';
+    font-weight: 900;
+}
+.label-div{
+    display: flex;
+    gap: clamp(0.69rem,calc(0.64rem + 0.26vw),0.84rem);
+}
+.sec4-div form div>label{
+    flex: 1 1;
+}
+.sec4-div form input{
+    background-color: initial;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: #fff;
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    margin-bottom: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem);
+    outline: none;
+    padding: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem) 0 clamp(0.69rem,calc(0.64rem + 0.26vw),0.84rem) 0;
+    width: 100%;
+}
+input{
+    caret-color: #b00;
+}
+.sec4-div form button{
+    align-self: center;
+    background-color: #b00;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    margin-top: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+    padding: 0.5em 1.25em;
+    transition: all .5s ease-in-out;
+}
+
