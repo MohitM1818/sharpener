@@ -16,14 +16,14 @@ import "slick-carousel/slick/slick-theme.css";
       };
     const studentSlider = [
         {
-            image:'./Images/alumni_aditya.jpeg',
+            image:'./Image2/alumni_aditya.jpeg',
             name: 'Aditya',
             work: 'AppScript',
             workHeading: 'Live projects got him offfers',
             href: 'https://www.youtube.com/watch?v=Di5JDrdcZ8o'
         },
         {
-            image:'./Images/alumni_amit.jpeg',
+            image:'./Image2/alumni_amit.jpeg',
             name: 'Amit',
             work: 'Baliza',
             workHeading: 'Layoff to a super offer',
@@ -31,7 +31,7 @@ import "slick-carousel/slick/slick-theme.css";
         },
 
         {
-            image:'./Images/alumni_arun.jpg',
+            image:'./Image2/alumni_arun.jpg',
             name: 'Arun',
             work: 'TechPearl',
             workHeading: 'Small college to big carrer',
@@ -39,7 +39,7 @@ import "slick-carousel/slick/slick-theme.css";
         },
 
         {
-            image:'./Images/alumni_prashant.jpeg',
+            image:'./Image2/alumni_prashant.jpeg',
             name: 'Prashant',
             work: 'Acideas Solutions',
             workHeading: 'Support role to react dev',
@@ -47,7 +47,7 @@ import "slick-carousel/slick/slick-theme.css";
         },
 
         {
-            image:'./Images/alumni_pushkar.png',
+            image:'./Image2/alumni_pushkar.png',
             name: 'Pushkar',
             work: 'DVNJ Health Tech',
             workHeading: 'Scrolling insta got him job',
@@ -55,7 +55,7 @@ import "slick-carousel/slick/slick-theme.css";
         },
 
         {
-            image:'./Images/alumni_somdutt.jpeg',
+            image:'./Image2/alumni_somdutt.jpeg',
             name: 'Somdutt',
             work: 'Dynmasoft',
             workHeading: 'From BA to SDE',
@@ -63,7 +63,7 @@ import "slick-carousel/slick/slick-theme.css";
         },
 
         {
-            image:'./Images/alumni_udai.jpeg',
+            image:'./Image2/alumni_udai.jpeg',
             name: 'Udai',
             work: 'Dolcera',
             workHeading: 'Govt. Sec to IT victory',

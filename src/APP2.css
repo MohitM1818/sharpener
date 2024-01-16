@@ -696,13 +696,13 @@ form .login-logo img{
     opacity: .7;
     font-size: small !important;
 }
-/* 
+/* dinesh css */
 *{
     
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* color: white; */
 }
 html{
     overflow-x: hidden;
@@ -712,7 +712,8 @@ html{
 .App{
     background-color: rgb(4, 4, 4) ;
     height: 37.5rem;
-} */
+    color:#fff
+} 
 
 .review-google span{
     color: black;
@@ -873,6 +874,9 @@ html{
     background-color: gray !important;
     border-radius: 50%;
     
+}
+.div_here{
+    color: #fff;
 }
 .div_here .slick-arrow:hover{
     background-color: gray;
@@ -1112,6 +1116,7 @@ html{
     text-align: center;
     background-color: #2e2e2e;
     padding: 2rem;
+    color: #fff;
     line-height: 1.6;
 }
 .courses-div{

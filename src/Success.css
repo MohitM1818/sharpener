@@ -75,7 +75,7 @@ main{
     font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
     font-weight: 400;
 }
- .slick-slider>button{
+.success-1 .slick-slider>button{
     display: none !important;
 }
 .success-1 .slick-slider{

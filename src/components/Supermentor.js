@@ -14,87 +14,87 @@ import "slick-carousel/slick/slick-theme.css";
     cssEase: "linear"
   };
   const mentor= [{
-    mentorimage:'./Images/abhik das.png',
+    mentorimage:'./Image2/abhik das.png',
     name: 'Abhik Das',
     technology: 'Frontend',
-    companyimage:'./Images/instahyre.png'
+    companyimage:'./Image2/instahyre.png'
     },
     
     {
-      mentorimage:'./Images/sanket.png',
+      mentorimage:'./Image2/sanket.png',
       name: 'Sanket Pawar',
       technology: 'Data Structures',
-      companyimage:'./Images/cloudcover.png'
+      companyimage:'./Image2/cloudcover.png'
     },
 
     {
-       mentorimage:'./Images/nishant.png',
+       mentorimage:'./Image2/nishant.png',
        name: 'Nishant Choubisa',
        technology: 'Data Structures',
-       companyimage:'./Images/sharpenertech.png'
+       companyimage:'./Image2/sharpenertech.png'
     },
 
      {
-        mentorimage:'./Images/monu.png',
+        mentorimage:'./Image2/monu.png',
         name: 'Monu Carpenter',
         technology: 'Data Structures',
-        companyimage:'./Images/coralmango.png'
+        companyimage:'./Image2/coralmango.png'
       },
 
       {
-        mentorimage:'./Images/manan shah.png',
+        mentorimage:'./Image2/manan shah.png',
         name: 'Manan Shah',
         technology: 'Frontend',
-        companyimage:'./Images/flexiloans.png'
+        companyimage:'./Image2/flexiloans.png'
       },
 
       {
-        mentorimage:'./Images/akash ghule.png',
+        mentorimage:'./Image2/akash ghule.png',
         name: 'Akash Ghule',
         technology: 'Frontend',
-        companyimage:'./Images/tatatechnologies.png'
+        companyimage:'./Image2/tatatechnologies.png'
        },
 
       {
-        mentorimage:'./Images/siva par.png',
+        mentorimage:'./Image2/siva par.png',
         name: 'Siva Prasad',
         technology: 'Backend',
-        companyimage:'./Images/yellowai.png'
+        companyimage:'./Image2/yellowai.png'
       },
 
      {
-        mentorimage:'./Images/shubham dangi.png',
+        mentorimage:'./Image2/shubham dangi.png',
         name: 'Shubham Dangi',
         technology: 'Backend',
-        companyimage:'./Images/valuefy.png'
+        companyimage:'./Image2/valuefy.png'
      },
 
       {
-        mentorimage:'./Images/reshab.png',
+        mentorimage:'./Image2/reshab.png',
         name: 'Reshab',
         technology: 'Backend',
-        companyimage:'./Images/utahtechlabs.png'
+        companyimage:'./Image2/utahtechlabs.png'
        },
 
      {
-        mentorimage:'./Images/kaustubh.png',
+        mentorimage:'./Image2/kaustubh.png',
         name: 'Kaustubh Bhatter',
         technology: 'Data Structures',
-        companyimage:'./Images/directi.png'
+        companyimage:'./Image2/directi.png'
       },
                     
       {
-        mentorimage:'./Images/vaibhav prasad.png',
+        mentorimage:'./Image2/vaibhav prasad.png',
         name: 'Vaibhav Prasad',
         technology: 'Data Structures',
-        companyimage:'./Images/deshaw.png'
+        companyimage:'./Image2/deshaw.png'
         },    
                         
         {
-            mentorimage:'./Images/yash prasad.jpeg',
+            mentorimage:'./Image2/yash prasad.jpeg',
             name: 'Yash Prasad',
             technology: 'Full Stack',
-            companyimage:'./Images/athenahealth.png'
+            companyimage:'./Image2/athenahealth.png'
         }
 
   ]

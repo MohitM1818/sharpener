@@ -3,6 +3,16 @@ import tic from '../Images/tic.png'
 import { Slidebar } from './Slidebar'
 import ISA from './ISA'
 import  Certificate  from './Certificate'
+import '../APP2.css';
+import  CarouselFirst  from '../components/carousel_first';
+import Slickapp from '../components/slickapp';
+import Students from '../components/Students';
+import Whytrustus from '../components/whytrustus';
+import Highpower from '../components/highpower';
+import Supermentor from '../components/Supermentor';
+import FaqSection from '../components/faq';
+import SharpenerWorks from '../components/SharpenerWorks';
+
 const Firstsection = () => {
 
 
@@ -96,26 +106,23 @@ const Firstsection = () => {
               </div>
           </div>
           <div>{Value}</div>
-          
-    {/* <small>Open for all! No batches. Control your learning style!</small>
-  </div>
-  <div className="pf-pera">
-    <img src={tic} alt="tic" />
-    <small>Unlimited mock interviews</small>
-  </div>
-  <div className="pf-pera">
-    <img src={tic} alt="tic" />
-    <small> <span className='text-gred'>WIPRO and NASSCOM certifications for free!</span></small>
-   */}
+
         </div>
         <div className="section2">
         <Slidebar/>
         </div>
         </div>
         </section>
-     
+        <Slickapp/> 
+        <CarouselFirst/>
+        <Students/>
         <ISA/>
         <Certificate/>
+        <Whytrustus/>
+    <Highpower/>
+    <SharpenerWorks/>
+    <Supermentor/>
+    <FaqSection/>
         </main>
     </>
   )
