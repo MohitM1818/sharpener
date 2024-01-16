@@ -22,6 +22,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/admin' element={<Admin/>}></Route>
       </Routes>
+      {/* this  is main */}
       {/* <Footer/> */}
     </>
   );
