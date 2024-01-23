@@ -1,15 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
  const CoursesRoadmap = () => {
+    const navigate=useNavigate();
+  function applynow(){
+    navigate('/login');
+  }
   return (
     <>
+     <div className='coursesroad-div'>
      <div className='courses-hero-div'><h1 className='black-text'>Think 
     <span className='text-color'> Web Devlopment. </span>
     Think
     <span className='text-color'> Sharpener</span>
     </h1>
     <p className='black-text'>Confused? Well, just get started with fundamentals and decide on the course later!</p>
-    <button className='faq-button'>Apply Now</button>
+    <button className='faq-button' onClick={applynow}>Apply Now</button>
     </div>
     
     <section className='roadmap-section'>
@@ -35,7 +41,7 @@ import React from 'react'
                     <p className='roadmap-svg2'>
                     <svg  stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 16 16" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M3.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.548-0.043zM12.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.549-0.043z"></path></svg>
                     </p>
-                    <p className='black-text'>
+                    <p className='black-tex'>
                     We never wanted to hire freshers! There are thousands applying but 
                     such a hassle to find the right one! Lack of skills, no professionalism
                      or just offer shopping with other companies. Enter, Sharpener. I 
@@ -195,7 +201,7 @@ import React from 'react'
                     <p className='roadmap-svg2'>
                     <svg  stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 16 16" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M3.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.548-0.043zM12.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.549-0.043z"></path></svg>
                     </p>
-                    <p className='black-text'>
+                    <p className='black-tex'>
                     The concepts we learnt in Backend were simply amazing. Never did I imagine with my background of Mathematics to get a job in programming. Now, look at me. A confident developer! Sharpener has completely changed my life 360 degree!
                     </p>
                     <p className='roadmap-svg3'>
@@ -228,7 +234,7 @@ import React from 'react'
                     <p className='roadmap-svg2'>
                     <svg  stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 16 16" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M3.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.548-0.043zM12.516 7c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5l-0.016-0.5c0-3.866 3.134-7 7-7v2c-1.336 0-2.591 0.52-3.536 1.464-0.182 0.182-0.348 0.375-0.497 0.578 0.179-0.028 0.362-0.043 0.549-0.043z"></path></svg>
                     </p>
-                    <p className='black-text'>
+                    <p className='black-tex'>
                     I was stuck with DSA, let alone being able to crack DSA like a piece of cake! Now things have completely changed! I mastered DSA, I nailed Frontend and now Backend. All in all, being a Full Stack Developer makes me the in-demand guy in the entire market now. Highly recommend this to all!
                     </p>
                     <p className='roadmap-svg3'>
@@ -298,6 +304,7 @@ import React from 'react'
                 </div>
         </article>
     </section>
+    </div>
     </> 
   )
 }

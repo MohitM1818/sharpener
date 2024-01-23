@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ISA =()=> {
   return (
-    <section className='isa-section'>
+    <section className='isa-section-big'>
         <div className="isa-part1">
           <div className="isa-head">
             <h2 className="isa-h2">The most student friendly ISA ever. <span className='text-gred'>Promise.</span></h2>
@@ -87,7 +88,7 @@ const ISA =()=> {
           </table>
         </div>
         <div className="isa-bottom">
-          <a href="http://" target="_blank" rel="noopener noreferrer">Know Details</a>
+          <Link to="/ISAsharpener"  rel="noopener noreferrer">Know Details</Link>
         </div>
     </section>
   )

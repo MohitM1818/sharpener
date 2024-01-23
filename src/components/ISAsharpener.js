@@ -1,8 +1,10 @@
 import React from 'react'
-
+import ISAcalculator from './ISAcalculator'
+import ISA from '../component/ISA'
  const ISAsharpener = () => {
   return (
   <section className='isa-section'>
+    <ISA/>
     <h2 className='black-text isa-heading'>Sharpener's Income Share Agreement (ISA)</h2>
     <ul className='isa-ul-list'>
       <li className='isa-listclass'>
@@ -27,6 +29,7 @@ import React from 'react'
       </li>
       
     </ul>
+    <ISAcalculator/>
   </section>
   )
 }

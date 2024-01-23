@@ -22,16 +22,16 @@ import { Link } from 'react-router-dom'
                         <div className="footer-links">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="/Success-Stories" target='_blank'>Success Stories</a></li>
+                                <li><Link to="/Success-Stories" >Success Stories</Link></li>
                                 <li><Link to='/Hire-superstar'>Hire With Us</Link></li>
                             </ul>
                         </div>
                         <div className="footer-support">
                             <h3>Support</h3>
                             <ul>
-                                <li><a href="/">Refund Policy</a></li>
-                                <li><a href="/">Privacy Policy</a></li>
-                                <li><a href="/">Terms & Conditions</a></li>
+                                <li><Link to="/Refund">Refund Policy</Link></li>
+                                <li><Link to="/Refund">Privacy Policy</Link></li>
+                                <li><Link to="/TermsCondition">Terms & Conditions</Link></li>
                             </ul>
                         </div>
                     </div>

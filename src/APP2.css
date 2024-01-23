@@ -6,6 +6,7 @@
     /* height: 4000px;  */
     line-height: 1.6;
     font-family: Roboto;
+    width: 100%;
 } 
 .navbar{
     display:flex;
@@ -100,6 +101,40 @@ header{
     padding: 0.15rem 1.7rem;
     border-radius: 1.4rem;
 }
+.navbar>svg{
+    margin-right: 1rem;
+}
+.sidebar{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    align-items: start;
+    padding: .8rem;
+    gap: 1rem;
+    top: 0;
+    background-color: white;
+    width: max-content;
+}
+.showsidebar{
+    display: none;
+}
+.sidebar li{
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: .5rem ;
+}
+.sidebar li:hover{
+    color: whitesmoke;
+    background: linear-gradient(rgb(234, 254, 232), rgb(254, 244, 232));
+}
+.sidebar li a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -110,15 +145,7 @@ header{
     background: rgb(187 0 0/ 70%);;
     height: 10px;
 }
-@media (max-width: 1200px){
-    .navcenter{
-        width: 60%;
-    }
-    #navul{
-       justify-content: space-between;
-       width: 70%;
-    }}
- 
+
 .first-section{
     display: flex;
     align-items: center;
@@ -187,6 +214,10 @@ header{
     margin: 1rem 0;
     align-items: center;
     font-size: 1.22rem;
+}
+.pf-pera small{
+    font-size: smaller;
+    font-weight: 400;
 }
 .pf-register{
     display: flex;
@@ -288,7 +319,7 @@ header{
     font-size: medium;
 }
 /* ISA CSS */
-.isa-section{
+.isa-section-big{
    padding:  clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
    line-height: 1.6;
 }
@@ -720,25 +751,27 @@ html{
 }
 .first-div{
     display: flex;
-    height: 3.75rem;
+    justify-content: space-between;
+    /* height: 3.75rem; */
     background-color: rgb(4, 4, 4);
     width: auto;
-    
+    padding: 2rem;
 }
 .google-logo{
-    margin-left:12.5rem;
-    margin-bottom: 0.625rem;
+    /* margin-left:12.5rem;
+    margin-bottom: 0.625rem; */
     height: 5rem;
     width: 11.875rem;
-
-
 }
 .review-div{
     margin-top: 6.25rem;
 }
 .heading{
-    margin: 1.25rem;
-    margin-left: 2.5rem;
+    /* margin: 1.25rem;
+    margin-left: 2.5rem; */
+    font-weight: 800;
+    white-space: nowrap;
+    /* overflow: hidden; */
 }
 .rating{
     margin-left: 6.25rem;
@@ -749,7 +782,8 @@ html{
     width: 10rem;
 }
 .second-div{
-    margin-left: 25rem;
+    display: flex;
+    gap: 10px;
 }
 .review-logo-quora{
     background-color: aliceblue;
@@ -760,10 +794,11 @@ html{
 }
 .review-details{
     
-    display: grid;
+    /* display: flex;
     flex-direction: row;
-    gap: 16px;
-     height: 25rem;
+    /* gap: 16px; */
+    /* width: 100%;
+    height: 25rem; */ 
      padding: 1.56rem;
      
 }
@@ -784,37 +819,44 @@ html{
 }
 
 .review-details .slick-slider{
-    margin-left: 12.25rem;
+    /* margin-left: 12.25rem;
   display: flex;
   flex-direction: row;
     height: 18.75rem;
     width: 82rem;
-    
+    width: 91%; */
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
    
 }
-.review-details .slick-slide{
+/* .review-details .slick-slide{
    margin-right: 6.25rem;
-}
+} */
 
 .review-details .slick-track{
     height: 18.75rem;
     width: 100%;
+    gap: 2rem;
     display: flex;
     flex-direction: row;
 }
 
-.review-details .slick-list{
-    height: 18.75rem;
-    width: 100%;
+/* .review-details .slick-list{
+    /* height: 18.75rem;
+    width: 97%;
     margin-left: -100px;
-    
-}
+     */
+
 .review-details .slick-next{
-    right: 3.125rem;
+    right: -1.7rem;
+    top: 45%;
 }
 
 .review-details .slick-prev{
-    left: -9.375rem;
+  left: -1.7rem;
+  top: 45%;
 }
 
 .review-google{
@@ -823,16 +865,16 @@ html{
     align-items: center;
     flex-direction: column;
     height: 15.625rem !important;
-    width: 25rem !important;
+    /* width: 27rem !important; */
     border-radius: 2rem;
     background-color:aliceblue;
-    
    }
 
 .WhySharpnerIs{
     margin-top: 3.125rem;
     font-size: xx-large;
     text-align: center;
+    font-weight: 800;
     height: 3.125rem;
     color: black;
 }
@@ -841,8 +883,8 @@ html{
 }
 
 .theme1{
-    opacity: 0.4;
-    background-color: lightblue;
+    /* opacity: 0.1; */
+    background-color: rgba(173, 216, 230,.1);
     height:23.75rem;
     width: 23.75rem;
     border-radius: 1rem;
@@ -850,7 +892,7 @@ html{
 }
 .theme1_1{
     font-size: 15.625rem;
-    opacity: 0.6;
+    opacity: 0.2;
     z-index: -1;
   
 }
@@ -858,22 +900,21 @@ html{
     margin-top: 3.12rem;
     margin-left: 1.25rem; 
     position: relative;
-    bottom: 17.5rem;
+    bottom: 24.5rem;
    /* color: #238dc9; */
     font-size: xx-large;
+    font-weight: 700;
 }
 
 .div_here .slick-next{
     background-color: gray;
     border-radius: 50%;
-    
-    
+    transform: translateY(-5rem);
 }
 .div_here .slick-prev{
-   
-    background-color: gray !important;
+     background-color: gray ; 
     border-radius: 50%;
-    
+    transform: translateY(-5rem);
 }
 .div_here{
     color: #fff;
@@ -882,17 +923,21 @@ html{
     background-color: gray;
 }
 .div_here .slick-list{
-    
     margin-top: 3.125rem;
     width: 100%;
-    
 }
-.div_here .slick-track{
+/* .div_here .slick-track{
     margin-left: 3.125rem;
-}
-.div_here .slick-slider{
-    margin-left: 1.875rem;
+} */
+ .div_here .slick-slider{
+ margin-left: 1.875rem; 
     width: 95%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+} 
+.div_here button{
+    background-color: #2e2e2e;
 }
 
 .where-do{
@@ -905,36 +950,34 @@ html{
     height: 25rem;
     background-color:#e7ecf480;
 }
+.student-div .slick-slider{
+    width: 95%;
+    margin: 0 auto;
+    height: 62%;
+}
 .student-yellow{
     margin-left: 8.125rem;
     margin-top:-1.5625rem ;
     width: 9.375rem;
 }
 .student-innerdiv{
-    
-    margin-left: -15.625rem;
-    display: flex;
-    height: 15.625rem !important;
-    width: 25rem !important;
-    background-color: white;
-    padding: 1rem;
+    background-color:white;
+    padding: .5rem;
+    height: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,.2);
     border-radius: 1rem;
-    
-    
 }
 .student-image{
     height: 12.5rem;
-    width: 13.75rem;
+    width: 12rem;
     border-radius: 50%;
 }
 .student-image-inner{
-    height: 12.5rem;
-    width: 13.75rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
-.youtube-image{
-    width: 2.5rem;
-}
+
 .student-details{
     display: grid; 
     margin-top: -12.5rem;
@@ -943,25 +986,33 @@ html{
 .image-text{
     height: 2.5rem;
     display: flex;
-    justify-content: left;
-    margin-left: -1.25rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -1.25rem; */
   
 }
+.youtube-image{
+    width: 2rem;
+}
 .Watch-now{
-    margin-top: 0.625rem;
+    /* margin-top: 0.625rem; */
+    text-decoration: none;
 }
 .Working-at{
-    margin-top: 1.25rem;
+    margin-top: .25rem;
     display: flex;
     flex-direction: column;
     line-height: 1.6;
 }
 
 .small-college{
-   
-   margin-top: 1.875rem;
-   margin-left: -3.125rem;
-    
+   /* margin-left: -5.125rem; */
+   background: rgba(231,236,244,.5);
+   border-radius: 1rem;
+   height: 2.5rem; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .text-color{
@@ -974,53 +1025,66 @@ html{
     background-size: 100%;
 }
 .student-details-div{
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     padding-top:0.625rem ;
-    
+    text-align: center;
 }
 .black-text{
     color: black !important;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 .student-innerdiv .slick-slide{
     margin-right: 150px !important;
 }
 .student-div .slick-arrow{
     background-color: #2f4f4f;
     border-radius: 50%;
-    
 }
 .student-div .slick-arrow:hover{
     color: #2f4f4f ;
 }
 .student-div .slick-list{
-    width: 90%;
-    margin-left: 4.375rem;
-   
+    width: 100%;
+    height: 100%;
+}
+.student-div .slick-slide{
+    margin-left: 1rem;
 }
 .student-div .slick-next{
-    right: 3.125rem;
+    right: -1.7rem;
 }
 .student-div .slick-prev{
-    left: 2.80rem;
-   
+    left: -1.7rem;
 }
 .wonder{
     width: 100%;
-    margin-top: 3.125rem;
+    padding: clamp(1.44rem,calc(1.01rem + 2.13vw),2.67rem) clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-weight: 400;  
     line-height: 1.6;
-    
+}
+.wonder h1{
+    font-weight: 800;
+}
+.wonder>p{
+    font-weight: 500;
+    font-size: large;
+}
+.wonder>div{
+    width: 80%;
 }
 .trust-us{
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
     margin: 3rem 0;
-    width: 75rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .trust-us-svg{
@@ -1033,37 +1097,55 @@ html{
        
 }
 .regular-dis{
-
     border-radius: 3rem;
     flex: 9 1;
-    padding: 2rem 3rem;
     background: #e6edf8;
+    padding: 2rem 3rem;
     font-weight: 400;
     line-height: 1.6;
+    margin-left: -2rem;
+}
+.regular-dis>p{
+    white-space: normal;
+}
+.regular-dis>small{
+    white-space: normal;
+}
+.no-forced{
+    margin: 0 !important;
+    background: #f8f6e6;;
+}
+.no-forcesvg{
+    margin-left: -2rem;
+    z-index: 4 !important;
+    background: #f8f6e6 !important;
+}
+.regular-dis p{
+    font-weight: 500;
+    font-size: x-large;
+}
+.regular-dis small{
+    font-size: large;
 }
 .svg-div1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 5.625rem;
     width: 5.625rem;
     /* background: #e6edf8; */
-    background: #2e2e2e;
+    background: #e6edf8;
    border-radius: 50%;
-   padding: 0.32rem;
-   
 }
-.svgred{
-    margin-top: 1.875rem;
-}
+
 .svg-div1 path{
     color:#bb0100;
 }
 .svg-class{
-    background: #e6edf8;
    display: flex;
     width: 100%;
     border-radius: 3rem;
-    
+    align-items: center;
 }
 
 .svg-class-2{
@@ -1099,18 +1181,8 @@ html{
     
 }
 
-
-.no-forced{
-    border-radius: 3rem;
-    flex: 9 1;
-    padding: 2rem 3rem;
-    font-weight: 400;
-    line-height: 1.6;
-
-    
-}
 .highpower{
-    height: 25rem;
+    /* height: 25rem; */
     display: block;
     justify-content: center;
     text-align: center;
@@ -1119,50 +1191,60 @@ html{
     color: #fff;
     line-height: 1.6;
 }
+.highpower>h2{
+    font-weight: 800;
+}
+.highpower>p{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+}
 .courses-div{
     margin-top: 3.125rem;
     align-items: center;
-    display: grid;
-    column-gap: 6.25rem;
-    grid-template-columns: auto auto auto;
+    display: flex;
     justify-content: center;
-    
 }
 .courses-div .card{
-   
     height: 18rem;
-    width: 22.19rem !important;
+    /* width: 22.19rem !important; */
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
 }
 .card-content{
-    height: 23.125rem;
-    width: 15rem;
-
+    /* height: 23.125rem; */
+    text-align: left;
+    padding: clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
 }
 .card-title{
-    line-height: 1.2;
-    height: 1.875rem;
-    width: 18.75rem;
+    font-size: clamp(1rem,calc(0.83rem + 0.87vw),1.5rem); 
     border-bottom:0.25rem solid #bb0000 ;
+    width: max-content;
+    font-weight: 800;
+    
 }
 .card-body{
     font-size: large;
     text-align: left;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    height: 7.18rem;
-    width: 23.125rem;
+    margin: 1rem 0;
+    padding: 0;
+    /* height: 7.18rem; */
+    /* width: 23.125rem; */
 }
-
+.card-body p{
+    margin: 0;
+}
 .card-svg path{
     color:lightgreen ;
 }
 .courses-button{
-    background-color: #bb0000;
+    background-color: #b00;
     border-radius: 0.625rem;
     cursor: pointer;
     height: 2.5rem;
     width: 6.25rem;
     font-weight:400;
+    border: none;
+    color: white;
     font-size: large;
     
 }
@@ -1193,7 +1275,7 @@ html{
     justify-content: space-around;
     border-radius: 0.625rem;
     height: 5.625rem;
-    width: 28.125rem;
+    width: 95%;
     background-color: white;
 }
 .mentor-image{
@@ -1216,6 +1298,183 @@ html{
     margin-top: 1.25rem;
    
 } 
+.faq-section{
+    padding: 3.75rem 2.875rem 4.875rem 1.6875rem;
+    background: radial-gradient(transparent,#fef6e0);
+} 
+.faq-heading{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+}
+.faq-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+} 
+.faq-button{
+    align-self: center;
+    background-color: #bb0000;
+    border: none;
+    border-radius: 0.625rem;
+    color: white !important;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    margin: 0.8rem;
+    padding: 0.5em 1.25em;
+    transition: all .5s ease-in-out;
+    padding: 0.5625rem 1.625rem 0.5625rem 1.625rem;
+    margin: 0.8125rem;
+}
+.faq-button:hover{
+    background-color: #2e2e2e;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.faq-body{
+    display: flex;
+    padding-left: 4.6875rem;
+    padding-right:4.6875rem;
+
+}
+.faq-body li{
+    display: flex;
+    padding-top: 0.625rem;
+    line-height: 1.6;
+}
+
+.faq-body .faq-ptag{
+    margin-right: 0.425rem;
+    height: 5.625rem;
+    width: 1.875rem;
+}
+.faq-svg path{
+    color: #bb0000;
+}
+.question{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 900;
+}
+.answer{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 400;
+    white-space: normal;
+}
+.sharp-work{
+    padding: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem);
+}
+.how-text{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: 0;
+    padding: clamp(1.2rem,calc(0.92rem + 1.39vw),2rem) 0;
+}
+.verticle-line-div{
+    /* height: 96px;
+    width: 1170px; */
+    margin-bottom: 4.5rem;
+    width: 80%;
+    display: flex;
+    position: relative;
+    height: 7rem;
+    gap: 2rem;
+}
+.verticle-line-div p{
+    white-space: normal;
+}
+.verticle-line-svg{
+     left: 50%;
+    margin-left: -30px;
+    position: absolute; 
+    background-color: rgb(187, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+.svg-icon{
+    display: block;
+    height: 24px;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    position: relative;
+    top: 50%;
+    width: 24px;
+}
+.verticle-line-element{
+    display: block;
+    height: fit-content;
+    width: 40%;
+    position: absolute;
+    left: 4%;
+    line-height: 1.6;
+    text-align: right;
+}
+.verticle-line-element2{
+    text-align: left;
+    position: absolute;
+    left: 55%;
+}
+.element-heading{
+    font-size: clamp(0.83rem,calc(0.73rem + 0.51vw),1.13rem);
+    font-weight: 700;
+}
+.verticle-line-outer-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 3rem;
+    align-items: center;
+    /* max-width: 1170px; */
+    /* padding: 2em 0; */
+    
+}
+.verticle-line-full{
+    width: .3rem;
+    height: 58em;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+    position: absolute;
+    left: 50%;
+    background-color: #b00;
+}
+.verticle-line-element p{
+    padding-top: 1rem;
+}
+.second-title {
+   display: inline-block;
+   position: absolute;
+    left: 55%;
+}
+.second-title2{
+    position: absolute;
+    display: inline-block;
+    width: 7rem;
+    text-align: right;
+    left: 34%;
+}
+
+.second-title span{
+    font-weight: 550;
+    position: relative;
+    display: inline-block;
+    color: #bb0100;
+    font-size: x-large;
+}
+
+.second-title .faq-button{
+    right: 90px;
+}
+.review-google-name{
+    font-weight: 800;
+}
+/* dinesh new css  */
+/* FAQ SECTION CSS  */
 .faq-section{
     padding: 3.75rem 2.875rem 4.875rem 1.6875rem;
 } 
@@ -1252,14 +1511,13 @@ html{
 }
 .faq-body{
     display: flex;
-
+    flex-direction: column;
     padding-left: 4.6875rem;
     padding-right:4.6875rem;
 
 }
 .faq-body li{
     display: flex;
-    padding-top: 0.625rem;
     line-height: 1.6;
 }
 .faq-body .faq-ptag{
@@ -1278,13 +1536,13 @@ html{
     text-align: center;
     font-size: xx-large;
 }
-.verticle-line-div{
+/* .verticle-line-div{
     height: 96px;
     width: 1170px;
     margin-top: 72px;
     margin-bottom: 72px;
-}
-.verticle-line-svg{
+} */
+/* .verticle-line-svg{
     height: 60px;
     left: 58%;
     margin-left: -30px;
@@ -1293,7 +1551,7 @@ html{
     background-color: rgb(187, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 50%;
-}
+} */
 .svg-icon{
     display: block;
     height: 24px;
@@ -1304,49 +1562,36 @@ html{
     top: 50%;
     width: 24px;
 }
-.verticle-line-element{
+/* .verticle-line-element{
     display: block;
     height: fit-content;
     width: 515px;
     line-height: 1.6;
     text-align: right;
-    
-        /* animation: cd-bounce-2 .6s;
-        animation-duration: 0.6s;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: none;
-        animation-play-state: running;
-        animation-name: cd-bounce-2;
-        animation-timeline: auto;
-        animation-range-start: normal;
-        animation-range-end: normal;
-        visibility: visible; */
-}
+} */
+     
 .element-heading{
     text-align: right;
 }
-.verticle-line-outer-div{
+/* .verticle-line-outer-div{
     display: flex;
     flex-direction: column;
     margin: 0 300px;
     max-width: 1170px;
-    /* padding: 2em 0; */
+    padding: 2em 0;} */
     
-}
+
 .verticle-line-element p{
     padding-top: 1rem;
 }
-.second-title {
+/* .second-title {
    display: inline-block;
    text-align: left;
    position: relative;
    left: 640px;
    bottom: 90px;
    
-}
+} */
 .second-title span{
     font-weight: 550;
     position: relative;
@@ -1357,3 +1602,240 @@ html{
 .second-title .faq-button{
     right: 90px;
 }
+/* ISAsharpner css */
+.isa-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fef6e0;
+    padding: clamp(1.73rem,calc(1.09rem + 3.17vw),3.55rem);
+}
+.isa-section .isa-bottom{
+    display: none;
+}
+.isa-heading{
+    text-align: center;
+    font-weight: 700;
+}
+.isa-ul-list{
+    list-style-type: none;
+    width: 70%;
+}
+
+.isa-listclass{
+    margin-top: 1rem;
+    display: flex;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.isa-listclass-p1{
+    margin-right: 10px;
+    
+}
+.isa-listclass svg path{
+    color: #bb0000;
+}
+/* ISA calculator css */
+
+.isa-calculator-section{
+    padding: 75px 32px 75px 32px;
+}
+.isa-calculator-article{
+    text-align: center;
+}
+.isa-numbers{
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    gap: 20px;
+    
+
+}
+.isa-number-text{
+    padding-top: 10px;
+    background-color: #fef6e0;
+    box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+}
+/* SLIDER CSS*/
+.isa-slider-div{
+    width: 95%;
+    margin-left: 30px;
+    display: flex;
+ background-color: #2e2e2e;
+ border-radius: 10px;
+}
+
+.isa-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+   padding: 2rem ;
+   
+}
+.isa-slider .MuiSlider-thumb{
+    background: orange;
+}
+.isa-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.isa-content-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 1.6;
+   
+}
+.top-content-div{
+    padding: 2rem;
+    
+}
+.margin-right{
+    margin-right: 100px;
+}
+.top-content-p{
+    color: orange;
+    font-size: xx-large;
+}
+.isa-content-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 1.6;
+ }
+ /* COURSES ROADMAP CSS */
+ .courses-hero-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 40px;
+ }
+ .roadmap-section{
+    text-align: center;
+    
+ }
+
+ .frontend-roadmap{
+    display: flex;
+ }
+ .frontend-intro{
+    background-image: radial-gradient(transparent, rgb(254, 246, 224));
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction:column ;
+    padding: 4.7rem;
+    line-height: 1.6;
+
+ }
+ .padding-bottom{
+    padding-bottom: 1rem;
+ }
+ .padding-2rem{
+    padding-top: 2rem;
+ }
+ .frontend-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .roadmap-svg path{
+    color: rgb(187, 0, 0);
+ }
+ .roadmap-svg2{
+    align-self: flex-start;
+}
+ .roadmap-svg2 path{
+    color: black;
+ }
+ .roadmap-svg3{
+    align-self: flex-end;
+ }
+ .roadmap-svg3 path{
+    color: black;
+ }
+ .frontend-timeline{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 4.7rem;
+    width: 50%;
+ }
+
+.frontend-right-svg{
+    
+    height: 40px;
+    width: 40px;
+    left: 58%;
+    margin-left: -40px;
+    position: absolute;
+    background-color: rgb(187, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    
+    
+}
+.frontend-right-svg svg{
+    height: 24px;
+    width: 24px;
+    margin-top: 8px;
+    margin-left: 8px;
+      
+}
+.DSA-content{
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+   
+}
+.arrow-svg path{
+    color: #bb0000;
+}
+.backend-svg-control .frontend-right-svg{
+    margin-left: -50rem ;
+}
+.long-text{
+    width: fit-content;
+    height: fit-content;
+    white-space: normal;
+}
+/* REFUND POLICY CSS */
+.Refund-div{
+    padding: 1rem;
+    
+}
+.Refund-div b{
+    font-weight: 800;
+}
+.Refund-div p{
+    color: black;
+    font-weight: 500;
+}
+/* TERMS & CONDITIONS CSS  */
+.termsCondition-div{
+    padding: 1rem;
+}
+.coursesroad-div{
+    padding: 4.8rem 1.8rem 1.8rem 2.1rem;
+}
+.isa-slider-div{
+    color: white;
+}
+.supermentor-h1{
+    color: white;
+}
+.google-logo2{
+    display: none;
+}
+.student-div .slick-track{
+    display: flex !important;
+    gap: 2rem;
+   }
