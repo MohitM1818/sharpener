@@ -1,0 +1,24 @@
+import React from 'react'
+
+ const Refund = () => {
+  return (
+    <div className='Refund-div black-text'><h1>Refund Policy</h1>
+    <b className='black-text'>Cancellation & Refunds</b><br/>
+    <p>1.If a cancellation is done by a delegate after 10 business days (or less) of the event, no refunds will be made.</p>
+    <p>2.In case Sharpener cancels/postpones an event, the participants who are ahead of 10 days of purchase, of course, will be rescheduled to any upcoming classroom batch without any extra charges and In case they don’t prefer classroom training they will be rescheduled to the upcoming live virtual class.</p>
+    <p>3.Refunds of the duplicate payment made by the delegate will be processed via the same source (original method of payment) in 10 working days post intimation by the customer.</p>
+    <p>4.Online Training For Self Placed Learning: Raise refund request within 7 days of purchase of course. The money-back guarantee is void if the participant has accessed more than 25% content or downloaded the E-Book. Any refund request beyond 7 days of purchasing the course will not be accepted and no refund will be provide</p>
+    <br/>
+    <b className='black-text'>PRICING AND AVAILABILITY</b>
+    <p>We will take all reasonable care to ensure that all details, descriptions and prices that appear on this Website are accurate but errors may occur from time to time. If we discover an error in the price of any goods that you have ordered, we will inform you of this by telephone or email as soon as possible and give you the option of reconfirming your order at the correct price or cancelling it. If we are unable to contact, you or we do not hear from you within 5 days of sending an email we will treat the order as cancelled. If the order is cancelled and you have already paid for the goods, you will receive a full refund (see Refunds below). The Website may contain typographical errors or other errors or inaccuracies and may not be complete or current. We therefore reserve the right to correct any errors, inaccuracies or omissions and to change or update information at any time on the Website without prior notice. We reserve the right to cancel any orders placed that are based on inaccurate information.</p>
+    <br/>
+    <b className='black-text'>Taxes</b>
+    <p>When you purchase any Online and/or blended learning course or other Service or product from Sharpener, you agree to pay not only the applicable fee, but also all applicable sales, use, value-added, transaction taxes, or other government-required fees and charges that Sharpener determines it is required to collect (taxes). Please note that Sharpener will calculate the Estimated Taxes at checkout and that, upon confirmation, you may be responsible for a different total. All applicable taxes are calculated based on the billing information you provide us at the time of purchase. You hereby authorize Sharpener to modify and charge any Taxes owed by you upon confirming the tax rate. Please also note that where GST / VAT collection is required, if any, GST/ VAT will be calculated and added at checkout. You hereby agree to indemnify and hold Sharpener harmless against any and all claims by any tax authority for any underpayment of any Taxes, including, without limitation, GST/VAT, and any related penalties and/or interest.</p>
+    <br/>
+    <b className='black-text'>Credit card billing</b>
+    <p>Credit card payments are processed by our third-party payment processor(s). By agreeing to these Terms of Use, you agree to be bound by Third Party Payment Processor(s) Terms of Service as applicable. Any breach of those terms will be treated as a breach of these Terms. If you have selected a subscription-based enrollment or implemented an installment plan, your credit card will be automatically be charged monthly for the cost of the Online and / or blended learning course and any applicable taxes. If you have selected a subscription-based enrollment or implemented an installment plan, you will be automatically charged to the Payment Method for the cost of the Online and / or blended learning course and any applicable taxes. If any fee is not paid in a timely manner, or our processors are unable to process your transaction using the credit card information provided, we reserve the right to terminate your account or suspend or terminate your access to the Online and / or blended learning course as we deem appropriate. If your payment details change, your card provider may provide us with updated card details and you agree to our collection of such details. We may use these new details in order to help prevent any interruption to the Services. If you would like to use a different payment method or if there is a change in payment method, please contact our support team.</p>
+    </div>
+
+  )
+}
+export default Refund;

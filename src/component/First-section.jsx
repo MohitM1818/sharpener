@@ -3,14 +3,25 @@ import tic from '../Images/tic.png'
 import { Slidebar } from './Slidebar'
 import ISA from './ISA'
 import  Certificate  from './Certificate'
+// import '../APP2.css';
+import  CarouselFirst  from '../components/carousel_first';
+import Slickapp from '../components/slickapp';
+import Students from '../components/Students';
+import Whytrustus from '../components/whytrustus';
+import Highpower from '../components/highpower';
+import Supermentor from '../components/Supermentor';
+import FaqSection from '../components/faq';
+import SharpenerWorks from '../components/SharpenerWorks';
+import { Link } from 'react-router-dom'
+
 const Firstsection = () => {
 
 
      const College=[<div>
-     <h2>For college passout</h2>
+     <h2 className='mediaq-h2'>For college passout</h2>
      <div className="pf-pera">
      <img src={tic} alt="tic" />
-     <small>No <span className='text gred'>upfront fees.</span> Pay only after you get a job. Guaranteed!</small>
+     <small>No <span className='text-gred'>upfront fees.</span> Pay only after you get a job. Guaranteed!</small>
    </div>
    <div className="pf-pera">
      <img src={tic} alt="tic" />
@@ -30,12 +41,12 @@ const Firstsection = () => {
      </div>
      
             <div className="pf-register">
-              <a id='register' href="/signup" target='_blank'>Register</a>
+              <Link id='register' to="/signup" >Register</Link>
               <p className='pf-p'>As a college passout</p>
             </div>
      </div>,
      <div>
-          <h2>For college student</h2>
+          <h2 className='mediaq-h2'>For college student</h2>
      <div className="pf-pera">
      <img src={tic} alt="tic" />
      <small>No <span className='text gred'> fees.</span>No payments.Open for all!</small>
@@ -58,7 +69,7 @@ const Firstsection = () => {
      </div>
      
             <div className="pf-register">
-              <a id='register' href="/signup" target='_blank'>Register</a>
+              <Link id='register' to="/signup" >Register</Link>
               <p className='pf-p' >As a college student</p>
             </div>
      </div>
@@ -95,27 +106,24 @@ const Firstsection = () => {
               <button className='college-passout' onClick={collegeS} style={{background:bg2}}>I am a <span className='college-passout-span' >College student</span></button>
               </div>
           </div>
-          <div>{Value}</div>
-          
-    {/* <small>Open for all! No batches. Control your learning style!</small>
-  </div>
-  <div className="pf-pera">
-    <img src={tic} alt="tic" />
-    <small>Unlimited mock interviews</small>
-  </div>
-  <div className="pf-pera">
-    <img src={tic} alt="tic" />
-    <small> <span className='text-gred'>WIPRO and NASSCOM certifications for free!</span></small>
-   */}
+          <div className='fsection2'>{Value}</div>
+
         </div>
         <div className="section2">
         <Slidebar/>
         </div>
         </div>
         </section>
-     
+        <Slickapp/> 
+        <CarouselFirst/>
+        <Students/>
         <ISA/>
         <Certificate/>
+        <Whytrustus/>
+    <Highpower/>
+    <SharpenerWorks/>
+    <Supermentor/>
+    <FaqSection/>
         </main>
     </>
   )
