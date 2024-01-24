@@ -18,6 +18,13 @@
 .second-title2{
     left: 30%;
 }
+.Refund-div>h1{
+    font-weight: 900;
+}
+.backend-svg-control .frontend-right-svg{
+    left:8%;
+    margin: 0;
+}
 }
  
 @media (max-width: 1048px) {
@@ -135,6 +142,12 @@
     .showsidebar{
         display: flex;
     }
+    .main-left{
+        width: 60% !important;
+    }
+    .main-right{
+        width: 40% !important;
+    }
 }
 @media (max-width:768px){
     .pf-pera{
@@ -177,9 +190,76 @@
         margin: 0 auto;
         width: 92%;
     }
-    /* .student-innerdiv{
-        width: 20px;
-    } */
+    .q-mid{
+        flex-direction: column;
+    }
+    .q-mid div{
+        width: 100%;
+    }
+    .success-1 .slick-slider{
+        width: 80%;
+       }
+       .sec1-main{
+        flex-direction: column;
+        gap: 3.1rem;
+       }
+       .main-left{
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .main-right{
+        width: 100% !important;
+    }
+    .main-left .left-h1,.left-h2,.left-h3{
+        width: 100% !important;
+        text-align: center;
+    }
+    .ryan-pera{
+        width: 100% !important;
+    }
+    .login-right{
+        display: none;
+    }
+    .login-left{
+        width: 100%;
+    }
+    .login-page form .form{
+        padding-left: 0;
+        align-items: center;
+    }
+    .form-top{
+        justify-content: center;
+    }
+    .form-input{
+        width: 90%;
+        text-align: center;
+    }
+    .input-area{
+        text-align: center;
+        width: 100%;
+    }
+    .svg-div{
+        width: 100%;
+    }
+    .pera-login{
+        text-align: center;
+    }
+    .frontend-roadmap{
+        flex-direction: column;
+    }
+    .frontend-intro{
+        width: 100%;
+    }
+    .frontend-timeline{
+        width: 100%;
+    }
+    .frontend-right-svg{
+        left: 8%;
+        margin: 0;
+    }
+    .frontend-roadmap:nth-child(3){
+        flex-direction: column-reverse;
+    }
 }
 @media (max-width:600px){
    .section1{
@@ -281,6 +361,21 @@
    .isa-part1 table{
     width: 100%;
    }
+   .success-small>img{
+    height: 1rem;
+   }
+   .google-img img{
+    height: 8rem;
+   }
+   .hire-sec1{
+    padding: 6rem 2rem 2rem 2rem !important;
+   }
+   .signup-page{
+    height: max-content;
+   }
+   .svg-div{
+    height: 40px;
+   }
 }
 @media (max-width:480px){
     .div_here .slick-prev{
@@ -380,4 +475,130 @@
     .pf-pera{
         gap: 10px;
     }
+    .q-bottom{
+        font-size: .9rem;
+    }
+    .s2-head{
+        width: 90%;
+    }
+    .article-6div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec1-main{
+        width: 100%;
+    }
+    .main-right img{
+        max-width: 100%;
+        height: auto;
+    }
+    .DSA-content{
+        margin-left: 2rem;
+    }
+    .frontend-intro{
+        padding: 1rem;
+    }
+    .frontend-timeline{
+        padding: 0 1rem 0 2rem;
+    }
 }
+@media (max-height:640px) {
+    .login-page .login-form{
+        position: static;
+    }
+}
+/* MEDIA QUERIES  */
+@media screen and (max-width: 768px){
+    .isa-numbers{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+ }
+}
+/* SLIDER MEDIA QUERIES  */
+ @media  screen and (max-width: 1406px) {
+    .top-content-div {
+            white-space: nowrap;
+    }
+ }
+ @media  screen and (max-width :1300px) {
+    .isa-slider-div{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .isa-content{
+        width: auto;
+        }
+    .margin-right{
+        margin-right: 0px;
+}
+.frontend-intro{
+    white-space: normal !important;
+}
+ }
+ @media screen and (max-width: 768px) {
+    .isa-slider {
+        width: 90%;
+        align-items: center;
+    }
+    .MuiBox-root.css-dnjqbo{
+        width: 95%;
+    }
+    .isa-heading{
+        white-space: normal;
+    }
+ }
+ @media screen and (max-width: 468px){
+        .top-content-div{
+            padding: 1rem;
+        }
+        .isa-slider-div{
+            width: 100%;
+            margin: 0 10px;
+        }
+        .isa-content{
+            width: 100%;
+        }
+        .isa-content h4{
+           font-size: medium;
+        }
+        .top-content-p{
+            font-size: x-large;
+        }}
+/* 
+MEDIA QUERIES  
+@media screen and (max-width: 768px){
+    .isa-numbers{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+ }
+}
+ SLIDER MEDIA QUERIES  
+ @media  screen and (max-width: 1406px) {
+    .top-content-div {
+            white-space: nowrap;
+    }
+ }
+ @media  screen and (max-width :1300px) {
+    .isa-slider-div{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .isa-content{
+        width: auto;
+        }
+    .margin-right{
+        margin-right: 0px;
+}
+ }
+ @media screen and (max-width: 768px) {
+    .isa-slider {
+        width: 90%;
+        align-items: center;
+    }
+    .MuiBox-root.css-dnjqbo{
+        width: 95%
+    }}
+     */

@@ -4,7 +4,6 @@ import Firstsection from './component/First-section';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import SuccessS from './component/Success-Stories';
 import './APP2.css';
-import './media.css';
 import Hire from './component/Hire-superstar';
 import  Footer  from './component/footer';
 import  Login  from './component/login';
@@ -17,6 +16,7 @@ import CoursesRoadmap from './components/CoursesRoadmap';
 import ISAsharpener from './components/ISAsharpener';
 import FaqSection from './components/faq';
 import ColorSlider from './components/ColorSlider';
+import './media.css';
 function App() {
   const {pathname} =useLocation();
   useEffect(()=>{

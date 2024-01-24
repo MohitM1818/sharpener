@@ -1031,8 +1031,8 @@ html{
 }
 .black-text{
     color: black !important;
-    white-space: nowrap;
-    overflow: hidden;
+    /* white-space: nowrap;
+    overflow: hidden; */
 }
 
 .student-innerdiv .slick-slide{
@@ -1809,8 +1809,8 @@ html{
 }
 /* REFUND POLICY CSS */
 .Refund-div{
-    padding: 1rem;
-    
+    padding: 4.8rem 1.8rem 1.8rem 2.1rem;
+    white-space: normal;
 }
 .Refund-div b{
     font-weight: 800;
@@ -1838,4 +1838,11 @@ html{
 .student-div .slick-track{
     display: flex !important;
     gap: 2rem;
+   }
+   .isa-listclass .black-text{
+    white-space: normal;
+   }
+   .roadmap-section>h2{
+    margin: 2rem 0;
+    font-weight: 800;
    }

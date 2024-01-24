@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Highpower from './highpower';
 
  const CoursesRoadmap = () => {
     const navigate=useNavigate();
@@ -17,7 +18,7 @@ import { useNavigate } from 'react-router-dom';
     <p className='black-text'>Confused? Well, just get started with fundamentals and decide on the course later!</p>
     <button className='faq-button' onClick={applynow}>Apply Now</button>
     </div>
-    
+    <Highpower/>
     <section className='roadmap-section'>
         <h2 className='black-text'>Courses Roadmap</h2>
         <article className='frontend-roadmap'>
